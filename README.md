@@ -1,7 +1,7 @@
 # Spring Boot測試專案
 
 
-## [簡易功能實現](#)
+## [簡易功能實現](http://localhost:8082/?locate=/c/Users)
 #### 功能：
 ```
 - Spring Local Server
