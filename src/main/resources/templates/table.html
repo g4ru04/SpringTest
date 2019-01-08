@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My first Page by thymeleaf</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+    	td{
+    		padding:6px 8px;
+    	}
+    </style>
+</head>
+<body>
+    <table>
+    	<tr>
+    		<th>permission</th>
+    		<th>owner</th>
+    		<th>modify_time</th>
+    		<th>name</th>
+    	</tr>
+	    <th:block th:each="data_i : ${data}">
+		    <tr>
+		        <td th:text="${data_i.filePermission}">123</td>
+		        <td th:text="${data_i.owner}">123</td>
+		        <td th:text="${data_i.modifiedTime}">123</td>
+		        <td th:text="${data_i.name}">123</td>
+		    </tr>
+		</th:block>
+    </table>
+</body>
+</html>
